@@ -1,11 +1,13 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-# import cairocffi as cairo
-# from cairocffi import OPERATOR_SOURCE
 
-import cairo as cairo
-from cairo import OPERATOR_SOURCE
+try:
+  import cairo as cairo
+  from cairo import OPERATOR_SOURCE
+except:
+  import cairocffi as cairo
+  from cairocffi import OPERATOR_SOURCE
 
 from numpy.random import random
 from numpy import pi
